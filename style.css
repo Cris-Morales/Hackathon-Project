@@ -1,28 +1,29 @@
-#clock {
-    display: flex;
-    flex-direction: column;
-};
-
 h1 {
     text-align: center;
     display: flex;
     flex-direction: row; 
     justify-content: center; 
     align-items: center;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    
 }
-
-#startstop {
+body {
+    background-image: linear-gradient(rgb(44, 0, 109) , rgba(232, 8, 146, 0.507));
     display: flex;
-};
-
-.clockOptions {
-    display: flex;
-};
-
-#session {
-    display: flex;
-};
-
-#reset {
-    display: flex;
-};
+    flex-direction: column;
+    align-content: center;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#clock {
+    font-size: x-large;
+    text-align: center;
+}
+#session  {
+    font-weight: bold;
+    text-align: center;
+}
+button {
+    font-weight: bold;
+    background-color: rgba(172, 242, 255, 0.949);
+    border: none;

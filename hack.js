@@ -1,8 +1,10 @@
+const reset = 10000;
+
 document.addEventListener('DOMContentLoaded', () => {
     const ourStartStopButt = document.querySelector('#startStop');
-
+    const ourResetButt = document.querySelector('#reset');
     // const myAudio = new Audio(chrome.runtime.getURL("./projectLofi.mp3"));
-    let countdown = 10000 //1500000;
+    let countdown = reset; //1500000;
     let pause = false;
     let sessions = 0;
     
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // increment variable at html id = session
         // myAudio.pause();
         pause = false; //new
-        countdown = 6000 //new
+        countdown = reset + 1000; //new
         document.getElementById("startStop").innerHTML = "Start";
         document.getElementById("clock").innerHTML = "25m 0s";
         document.getElementById("session").innerHTML = 'Sessions ' + ++sessions;
@@ -60,6 +62,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("startStop").innerHTML = "Start"; 
             pause = true;     //new       
         }
+    });
+
+
+    ourResetButt.addEventListener('click', () => {
+        countdown = reset + 1000; //new
+        document.getElementById("startStop").innerHTML = "Start"; 
+        pause = true;
+        document.getElementById("clock").innerHTML = "25m 0s";
+        document.getElementById("session").innerHTML = 'Sessions 0';
     });
 })
 

@@ -1,13 +1,18 @@
 {
     "manifest_version": 3,
-    "name": "hackathon project",
+    "name": "pomoVibe",
     "version": "1.0",
-    "description": "TBD",
+    "description": "Make use of the scientifically proven pomodoro study technique, while also vibing to a studious Lofi playlist.",
     "action": {
         "default_popup": "hack.html",
-        "default_title": "My Extension"
+        "default_title": "pomoVibe"
     },
-    "permissions": [], 
+    "permissions": [
+        "content_scripts"
+    ], 
+    "background":{
+        "service_worker": "background.js"
+    },
     "host_permissions":[
         "https://*/*"
     ],
@@ -15,7 +20,8 @@
         {
             "matches": ["<all_urls>"],
             "js": ["./hack.js"],
-            "css": ["style.css"]
+            "css": ["./style.css"],
+            "js": ["./background.js"]
         }
     ]
 }
