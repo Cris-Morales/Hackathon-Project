@@ -7,7 +7,10 @@
         "default_popup": "hack.html",
         "default_title": "My Extension"
     },
-    "permissions": [], 
+    "permissions": [],
+    "web_accessible_resources":[
+        "./projectLofi"
+    ], 
     "host_permissions":[
         "https://*/*"
     ],

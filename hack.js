@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const ourStartStopButt = document.querySelector('#startStop');
 
+    const myAudio = new Audio(chrome.runtime.getURL("./projectLofi.mp3"));
     let countdown = 6000 //1500000;
     let pause = false;
     let sessions = 0;
@@ -31,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function stopTimer(ourInterval) {
         clearInterval(ourInterval);
         // increment variable at html id = session
+        myAudio.pause();
         pause = false; //new
         countdown = 6000 //new
         document.getElementById("startStop").innerHTML = "Start";
@@ -50,9 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.getElementById("startStop").innerHTML === "Start") {
             pause = false; //new
             document.getElementById("startStop").innerHTML = "Stop";
+            myAudio.play();
             timeInterval();          
         }
         else {
+            myAudio.pause();
             document.getElementById("startStop").innerHTML = "Start"; 
             pause = true;     //new       
         }
