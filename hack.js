@@ -13,3 +13,7 @@
 //randomly while studying
     //button that once clicked, opens text box to add information. At random interval, 
     //flashcard returns with last word removed "______"
+
+
+console.log('TEST')
+alert('TEST')
