@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const ourStartStopButt = document.querySelector('#startStop');
 
     // const myAudio = new Audio(chrome.runtime.getURL("./projectLofi.mp3"));
-    let countdown = 6000 //1500000;
+    let countdown = 10000 //1500000;
     let pause = false;
     let sessions = 0;
     
