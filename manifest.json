@@ -4,9 +4,9 @@
     "version": "1.0",
     "description": "TBD",
     "permissions": [], // depending on our extension this will change
-    "host_permissions":{
+    "host_permissions":[
         "https://*/*"
-    }
+    ]
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
