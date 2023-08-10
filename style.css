@@ -20,10 +20,11 @@ body {
     text-align: center;
 }
 #session  {
-    font-weight: bold;
     text-align: center;
+    font-size: medium;
 }
 button {
     font-weight: bold;
     background-color: rgba(172, 242, 255, 0.949);
     border: none;
+}

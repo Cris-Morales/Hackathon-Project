@@ -1,4 +1,5 @@
 const reset = 10000;
+// let init = false;
 
 document.addEventListener('DOMContentLoaded', () => {
     const ourStartStopButt = document.querySelector('#startStop');
@@ -52,6 +53,13 @@ document.addEventListener('DOMContentLoaded', () => {
         //if button text is stop => clear interval, reassign text to start
         // else do stuff below.
         if (document.getElementById("startStop").innerHTML === "Start") {
+            // if(!init){
+            //     init = true;
+            //     chrome.windows.create({
+            //         url: chrome.runtime.getURL("https://www.youtube.com/watch?v=m8U_38ZyI-4"),
+            //         type: "popup"
+            //     })
+            // }
             pause = false; //new
             document.getElementById("startStop").innerHTML = "Stop";
             // myAudio.play();
