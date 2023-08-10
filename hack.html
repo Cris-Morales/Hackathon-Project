@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel = "stylesheet" href="style.css">
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            h1 {
+                text-align: center;
+                display: flex;
+                flex-direction: row; 
+                justify-content: center; 
+                align-items: center;
+            }
+
+        </style>
         <body> 
-            <h1>Hello World</h1>
+            <h1 id = "title">Pomodoro Lofi</h1>
+            <div id = "clock">25m 0s</div>
+            <button type="button" id = "startStop" class="clockOptions">Start</button>
+            <div id = "session">Sessions 0</div> <!--`Session ${counter}`-->
+            <button type="button" id = "reset" class=""clockOptions>Reset</button>
             <script src="hack.js"></script>
+
         </body>
     </head>
 </html>
+
+
+
+
 
 
 <!--timer to be accessed with options-->
