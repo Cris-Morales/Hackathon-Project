@@ -3,6 +3,10 @@
     "name": "hackathon project",
     "version": "1.0",
     "description": "TBD",
+    "action": {
+        "default_popup": "hack.html",
+        "default_title": "My Extension"
+    },
     "permissions": [], 
     "host_permissions":[
         "https://*/*"
